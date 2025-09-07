@@ -10,3 +10,7 @@ python -m esptool --chip esp32s3 --port COM4 --baud 921600 read_flash 0x800000 0
 # 5. idf.py -p COM4 monitor
 # Xoa trong essp
 python -m esptool --chip esp32s3 --port COM4 --baud 921600 erase_flash
+   Flash models:
+idf.py -p COM4 write-flash 0x800000 models/srmodels.bin
+Monitor logs:
+ idf.py -p COM4 monitor
